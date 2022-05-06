@@ -60,3 +60,199 @@ Processing by V1::GreetingsController#index as JSON
 Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 877)
 
 
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-06 13:30:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 85ms (Views: 1.4ms | ActiveRecord: 9.2ms | Allocations: 8818)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:30:17 +0100
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:32:01 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/i4mcloud/Desktop/Microverse/hello-react-rails/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: a3082e864f8b262a3ec5
+Version: webpack 4.46.0
+Time: 9368ms
+Built at: 05/06/2022 1:32:18 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-3bf8b249e53f2362b3b7.js  1.76 MiB       application  [emitted] [immutable]  application
+     js/application-3bf8b249e53f2362b3b7.js.map  2.02 MiB       application  [emitted] [dev]        application
+         js/hello_react-9418656527ca510a1f89.js  1.25 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-9418656527ca510a1f89.js.map  1.44 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-a11d2be82ab2bf907432.js  1.76 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-a11d2be82ab2bf907432.js.map  2.02 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-3bf8b249e53f2362b3b7.js js/application-3bf8b249e53f2362b3b7.js.map
+Entrypoint hello_react = js/hello_react-9418656527ca510a1f89.js js/hello_react-9418656527ca510a1f89.js.map
+Entrypoint server_rendering = js/server_rendering-a11d2be82ab2bf907432.js js/server_rendering-a11d2be82ab2bf907432.js.map
+[../../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} {hello_react} {server_rendering} [built]
+[../../../node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {hello_react} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 193 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 216 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+    + 32 hidden modules
+
+  Rendered static/index.html.erb within layouts/application (Duration: 18488.4ms | Allocations: 3530)
+  Rendered layout layouts/application.html.erb (Duration: 19396.5ms | Allocations: 107640)
+Completed 200 OK in 19399ms (Views: 19398.1ms | ActiveRecord: 0.0ms | Allocations: 108933)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:33:08 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/i4mcloud/Desktop/Microverse/hello-react-rails/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 6caf7eda674aaaad3fca
+Version: webpack 4.46.0
+Time: 1538ms
+Built at: 05/06/2022 1:33:11 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-d72d3e3e5de9452a4a72.js  1.72 MiB       application  [emitted] [immutable]  application
+     js/application-d72d3e3e5de9452a4a72.js.map  1.98 MiB       application  [emitted] [dev]        application
+         js/hello_react-9418656527ca510a1f89.js  1.25 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-9418656527ca510a1f89.js.map  1.44 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-869279200c52ab0964dd.js  1.72 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-869279200c52ab0964dd.js.map  1.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-d72d3e3e5de9452a4a72.js js/application-d72d3e3e5de9452a4a72.js.map
+Entrypoint hello_react = js/hello_react-9418656527ca510a1f89.js js/hello_react-9418656527ca510a1f89.js.map
+Entrypoint server_rendering = js/server_rendering-869279200c52ab0964dd.js js/server_rendering-869279200c52ab0964dd.js.map
+[../../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} {hello_react} {server_rendering} [built]
+[../../../node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {hello_react} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 193 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 216 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+    + 32 hidden modules
+
+  Rendered static/index.html.erb within layouts/application (Duration: 3023.8ms | Allocations: 3668)
+  Rendered layout layouts/application.html.erb (Duration: 3036.6ms | Allocations: 18723)
+Completed 200 OK in 3039ms (Views: 3037.9ms | ActiveRecord: 0.0ms | Allocations: 19644)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:35:37 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/i4mcloud/Desktop/Microverse/hello-react-rails/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 6530f8e2e1cdcadda05b
+Version: webpack 4.46.0
+Time: 1570ms
+Built at: 05/06/2022 1:35:40 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-16bba9a266a3b04eae7c.js  1.72 MiB       application  [emitted] [immutable]  application
+     js/application-16bba9a266a3b04eae7c.js.map  1.98 MiB       application  [emitted] [dev]        application
+         js/hello_react-9418656527ca510a1f89.js  1.25 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-9418656527ca510a1f89.js.map  1.44 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-42baa55be3e305f1b4ec.js  1.72 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-42baa55be3e305f1b4ec.js.map  1.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-16bba9a266a3b04eae7c.js js/application-16bba9a266a3b04eae7c.js.map
+Entrypoint hello_react = js/hello_react-9418656527ca510a1f89.js js/hello_react-9418656527ca510a1f89.js.map
+Entrypoint server_rendering = js/server_rendering-42baa55be3e305f1b4ec.js js/server_rendering-42baa55be3e305f1b4ec.js.map
+[../../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} {hello_react} {server_rendering} [built]
+[../../../node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {hello_react} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 193 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 216 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+    + 32 hidden modules
+
+  Rendered static/index.html.erb within layouts/application (Duration: 3345.1ms | Allocations: 3654)
+  Rendered layout layouts/application.html.erb (Duration: 3357.7ms | Allocations: 18810)
+Completed 200 OK in 3359ms (Views: 3358.9ms | ActiveRecord: 0.0ms | Allocations: 19731)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:42:49 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/i4mcloud/Desktop/Microverse/hello-react-rails/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 90be9faa7e8d7bf28d99
+Version: webpack 4.46.0
+Time: 7642ms
+Built at: 05/06/2022 1:43:12 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-e369fa5eebf351055f8c.js  1.81 MiB       application  [emitted] [immutable]  application
+     js/application-e369fa5eebf351055f8c.js.map  2.06 MiB       application  [emitted] [dev]        application
+         js/hello_react-9418656527ca510a1f89.js  1.25 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-9418656527ca510a1f89.js.map  1.44 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-8c8f826202d2e10a7c31.js  1.81 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-8c8f826202d2e10a7c31.js.map  2.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-e369fa5eebf351055f8c.js js/application-e369fa5eebf351055f8c.js.map
+Entrypoint hello_react = js/hello_react-9418656527ca510a1f89.js js/hello_react-9418656527ca510a1f89.js.map
+Entrypoint server_rendering = js/server_rendering-8c8f826202d2e10a7c31.js js/server_rendering-8c8f826202d2e10a7c31.js.map
+[../../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} {hello_react} {server_rendering} [built]
+[../../../node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {hello_react} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 216 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 216 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+    + 37 hidden modules
+
+  Rendered static/index.html.erb within layouts/application (Duration: 22013.1ms | Allocations: 3736)
+  Rendered layout layouts/application.html.erb (Duration: 22339.6ms | Allocations: 18789)
+Completed 200 OK in 22344ms (Views: 22342.5ms | Allocations: 19701)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:43:30 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2533)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5372)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 6554)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:43:33 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2252)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4674)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 5028)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:46:48 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2346)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 17507)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 18412)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-06 13:47:14 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2532)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 5383)
+Completed 200 OK in 52ms (Views: 47.1ms | Allocations: 6565)
+
+
