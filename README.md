@@ -1,1 +1,1 @@
-# hello-react-rails
+# Hello-react-rails
