@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux";
 import { getGreeting } from "../redux/greeting/thunk";
+import './Greeting.css'
 
 const Greeting = () => {
 
@@ -14,8 +15,10 @@ const Greeting = () => {
 
   return (
     <React.Fragment>
-      <p>{ message }</p>
-      <button onClick={() => dispatch(getGreeting())}>Fetch Greetings</button>
+      <div className="greeting">
+        <h1>{ message }</h1>
+        <button onClick={() => dispatch(getGreeting())}>Greet</button>
+      </div>
     </React.Fragment>
   );
 }
