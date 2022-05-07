@@ -3209,3 +3209,126 @@ Processing by V1::GreetingsController#index as JSON
 Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 804)
 
 
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:51:06 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 5.1ms | Allocations: 5051)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:51:30 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 809)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:51:31 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 804)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:51:33 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 804)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:51:34 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 804)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-07 22:53:04 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/i4mcloud/Desktop/Microverse/hello-react-rails/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 9354a0ef262103d3c30a
+Version: webpack 4.46.0
+Time: 1477ms
+Built at: 05/07/2022 10:53:07 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-9f90383c90794bae9946.js  2.13 MiB       application  [emitted] [immutable]  application
+     js/application-9f90383c90794bae9946.js.map  2.38 MiB       application  [emitted] [dev]        application
+         js/hello_react-9418656527ca510a1f89.js  1.25 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-9418656527ca510a1f89.js.map  1.44 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-039f98842287cb6bc2d6.js  2.13 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-039f98842287cb6bc2d6.js.map  2.38 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-9f90383c90794bae9946.js js/application-9f90383c90794bae9946.js.map
+Entrypoint hello_react = js/hello_react-9418656527ca510a1f89.js js/hello_react-9418656527ca510a1f89.js.map
+Entrypoint server_rendering = js/server_rendering-039f98842287cb6bc2d6.js js/server_rendering-039f98842287cb6bc2d6.js.map
+[../../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} {hello_react} {server_rendering} [built]
+[../../../node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {hello_react} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 216 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 216 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/redux/configStore.js] 370 bytes {application} {server_rendering} [built]
+[./app/javascript/redux/greeting/greeting.js] 557 bytes {application} {server_rendering} [built]
+[./app/javascript/redux/greeting/thunk.js] 1.66 KiB {application} {server_rendering} [built]
+    + 115 hidden modules
+
+  Rendered static/index.html.erb within layouts/application (Duration: 2512.5ms | Allocations: 3746)
+  Rendered layout layouts/application.html.erb (Duration: 2529.6ms | Allocations: 18932)
+Completed 200 OK in 2531ms (Views: 2530.9ms | ActiveRecord: 0.0ms | Allocations: 19862)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:07 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 2943)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:08 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 809)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:11 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 804)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:12 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:14 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.3ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 804)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:15 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 804)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-05-07 22:53:16 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/v1/greetings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 804)
+
+
