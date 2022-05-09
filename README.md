@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Anuar Shaidenov**
+👤 **Charles Gobina**
 
 - GitHub: [@charlesgobina](https://github.com/charlesgobina)
 - Twitter: [@charles_gobina](https://twitter.com/charles_gobina)
