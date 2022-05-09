@@ -6,7 +6,6 @@ import './Greeting.css'
 const Greeting = () => {
 
   const message   = useSelector(state => state.greetingReducer);
-  console.log(message);
   const dispatch = useDispatch();
 
   useEffect(() => {
