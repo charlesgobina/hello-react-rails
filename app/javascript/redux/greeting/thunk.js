@@ -5,6 +5,5 @@ const greetingUrl = 'http://127.0.0.1:3000/v1/greetings';
 
 export const getGreeting = () => async (dispatch) => {
   const response = await axios.get(greetingUrl);
-  console.log(response.data.message.message);
   dispatch(fetchgreeting(response.data.message.message));
 };
